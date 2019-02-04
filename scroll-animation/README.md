@@ -4,11 +4,11 @@
 
 Add scroll_animation.css & scroll_animation.js files to your project and call the function animation()
 ```html
-    <link rel="stylesheet" href="./scroll_animation.css">
+  <link rel="stylesheet" href="./scroll_animation.css">
 ```
 ```html
-    <script src="./scroll_animation.js"></script>
-    <script> animation(); </script>
+  <script src="./scroll_animation.js"></script>
+  <script> animation(); </script>
 ```
 
 
@@ -29,15 +29,15 @@ Add scroll_animation.css & scroll_animation.js files to your project and call th
 * fadeInLeft
 * fadeInLeftpBig
 
-### Types transition 
+### Types transitions
 * SlowStart
 * slowEnd
 
 ## Example
 
 ```html
-    <!DOCTYPE html>
-    <html lang="en">
+  <!DOCTYPE html>
+   <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,7 +69,7 @@ Add scroll_animation.css & scroll_animation.js files to your project and call th
          animation();
        </script>
     </body>
-</html>
+  </html>
  ```
 [Demo](http://salvador.coddy.com.mx/animation-scroll/)
 
