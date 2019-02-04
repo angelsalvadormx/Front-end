@@ -29,7 +29,7 @@ Add scroll_animation.css & scroll_animation.js files to your project and call th
 * fadeInLeft
 * fadeInLeftpBig
 
-### Transition animations
+### Types transition 
 * SlowStart
 * slowEnd
 
