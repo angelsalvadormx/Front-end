@@ -1,12 +1,12 @@
 const animation = ()=>{
     let data = [];
     const wh = screen.height;
-    const items = document.getElementsByClassName('animated fade');
+    const items = document.getElementsByClassName('animated');
+    console.log(items);
     
     Object.keys(items).forEach(key => {
         
         let pos = items[key].offsetTop + items[key].offsetHeight;
-        console.log(pos, items[key]);
     
         let anima  = items[key].getAttribute('data-animation'); 
         data.push({
@@ -31,8 +31,6 @@ const animation = ()=>{
                     data.splice(index,1)
                 }
             });
-
         }
-        
     });
 }

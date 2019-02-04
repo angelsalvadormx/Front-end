@@ -11,11 +11,109 @@
     <link rel="stylesheet" href="./scroll_animation.css">
 </head>
 <body>
+    
     <section>
-        <article class="animation" data-animation="fadeInUp">
-            <p>FadeInUp</p>
+
+        <h2 class="animated" data-animation="fadeIn">Scroll animation</h2>
+        <main>
+            <ul>
+                <li><a href="https://github.com/AngelSalvador98/Front-end/tree/master/scroll-animation" target="_black">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/angel-salvador-99a815132/" target="_black">Linkedin</a></li>
+                <li><a href="https://www.instagram.com/angel_salvador98/" target="_black">Instagram</a></li>
+            </ul>
+        </main>
+    </section>
+
+    <section>
+        <article class="animated" data-animation="fadeInLeft">
+            <p>fadeInLeft</p>
+        </article>
+
+        <article class="animated" data-animation="fadeInTop">
+            <p>fadeInTop</p>
+        </article>
+
+        <article class="animated" data-animation="fadeInRight">
+            <p>fadeInRight</p>
         </article>
     </section>
+
+    <!-- slowStart -->
+    <section>
+        <article class="animated slowStart" data-animation="fadeInLeft">
+            <p>fadeInLeft slowStart</p>
+        </article>
+
+        <article class="animated slowStart" data-animation="fadeInTop">
+            <p>fadeInTop slowStart</p>
+        </article>
+
+        <article class="animated slowStart" data-animation="fadeInRight">
+            <p>fadeInRight slowStart</p>
+        </article>
+    </section>
+
+    <!-- slowEnd -->
+    <section>
+        <article class="animated slowEnd" data-animation="fadeInLeft">
+            <p>fadeInLeft slowEnd</p>
+        </article>
+
+        <article class="animated slowEnd" data-animation="fadeInTop">
+            <p>fadeInTop slowEnd</p>
+        </article>
+
+        <article class="animated slowEnd" data-animation="fadeInRight">
+            <p>fadeInRight slowEnd</p>
+        </article>
+    </section>
+
+    <section>
+        <article class="animated" data-animation="fadeInLeftBig">
+            <p>fadeInLeftBig</p>
+        </article>
+
+        <article class="animated" data-animation="fadeInTopBig">
+            <p>fadeInTopBig</p>
+        </article>
+
+        <article class="animated" data-animation="fadeInRightBig">
+            <p>fadeInRightBig</p>
+        </article>
+    </section>
+
+    <section>
+        <article class="animated slowStart" data-animation="fadeInLeftBig">
+            <p>fadeInLeftBig slowStart</p>
+        </article>
+
+        <article class="animated slowStart" data-animation="fadeInTopBig">
+            <p>fadeInTopBig slowStart</p>
+        </article>
+
+        <article class="animated slowStart" data-animation="fadeInRightBig">
+            <p>fadeInRightBig slowStart</p>
+        </article>
+    </section>
+
+    <section>
+        <article class="animated slowEnd" data-animation="fadeInLeftBig">
+            <p>fadeInLeftBig slowEnd</p>
+        </article>
+
+        <article class="animated slowEnd" data-animation="fadeInTopBig">
+            <p>fadeInTopBig slowEnd</p>
+        </article>
+
+        <article class="animated slowEnd" data-animation="fadeInRightBig">
+            <p>fadeInRightBig slowStart</p>
+        </article>
+    </section>
+
     <script src="./scroll_animation.js"></script>
+    
+    <script>
+        animation();
+    </script>
 </body>
 </html>
