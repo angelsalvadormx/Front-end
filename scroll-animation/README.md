@@ -71,8 +71,8 @@ Add scroll_animation.css & scroll_animation.js files to your project and call th
     </body>
   </html>
  ```
-[Demo](http://salvador.coddy.com.mx/animation-scroll/ " target="_blank)
+[Demo](http://salvador.coddy.com.mx/animation-scroll/)
 
 ## 
-[Linkdin](https://www.linkedin.com/in/angel-salvador-99a815132/){:target="_blank"}
-[Instagram](https://www.instagram.com/angelsalvadormx/){:target="_blank"}
+[Linkdin](https://www.linkedin.com/in/angel-salvador-99a815132/)
+[Instagram](https://www.instagram.com/angelsalvadormx/)
