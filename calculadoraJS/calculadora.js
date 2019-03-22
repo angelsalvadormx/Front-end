@@ -1,13 +1,13 @@
 const btns = document.getElementsByClassName('boton');
 const display = document.getElementById('Display');
 var show = '';
-var replace = false;
+var replace = false; 
 var save = '';
 
 function getValue(){
     let value = this.getAttribute('value');
     
-    if(replace || 'MR' || 'M+'|| 'C'){
+    if(replace || value == 'MR' || value == 'M+' || value == 'C'){
         show = '';
         replace = false;
     }
@@ -17,10 +17,10 @@ function getValue(){
         value = '';
     }
 
-    value == 'MR' ? value = save : ''
-    value =  value == 'M+' ? eval(show+"+"+save) : '',
-    value == 'MC' ? save = '' : '';
-    value == 'C' ? value = '' : ''
+    (value == 'MR') ? value = save : '';
+    value = (value == 'M+') ? eval(show+"+"+save) : value;
+    (value == 'MC') ? save = '' : '';
+    (value == 'C') ? value = '' : '';
 
     if(value == '='){
         replace = true;
@@ -38,8 +38,6 @@ function getValue(){
     }
     
     show += value;
-    
     display.value = show;
 }
-
 Object.keys(btns).forEach(key => btns[key].addEventListener('click',getValue));
