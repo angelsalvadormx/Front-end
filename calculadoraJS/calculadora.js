@@ -11,6 +11,13 @@ function getValue(){
         show = '';
         replace = false;
     }
+
+    if(value == 'CE'){
+        value = show.split('');
+        value.pop();
+        value.join();
+        show = '';
+    }
     
     if(value == 'MS'){
         save = show;
