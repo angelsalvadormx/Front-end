@@ -15,7 +15,7 @@ function getValue(){
     if(value == 'CE'){
         value = show.split('');
         value.pop();
-        value.join();
+        value = value.join('');
         show = '';
     }
     
