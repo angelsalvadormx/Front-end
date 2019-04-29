@@ -1,0 +1,53 @@
+/* button menu */
+#btn-menu{
+  width: 56px;
+  height: 48px;
+  padding: 10px;
+  display:none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#btn-menu i{
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+/* class to show menu and black layer*/
+.show_menu{
+  left: 0 !important;
+}
+.hidden_menu{
+  position: relative;
+  z-index: 2;
+  background-color: #FFF;
+}
+.show_mask{
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* layer */
+#ui-mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.54);
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+
+
+/* Responsive */
+@media screen AND (max-width:586px){
+  .hidden_menu{
+    left: -100%;
+  }
+  #btn-menu{
+    display: flex;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+
+    <!-- Necessary file  -->
+    <link rel="stylesheet" href="./css/menu.css">
+    
+    <!-- isn't necessary add this file, 
+        this file have a base theme for the menu -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <span id="btn-menu">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <h2 class="title_site">Title</h2>
+        <nav id="nav" class="animation_menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="sub-menu">
+                    Sub menu        
+                    <ul>
+                        <li> <a href="#"> Option 1 </a> </li>
+                        <li> <a href="#"> Option 2 </a> </li>
+                        <li> <a href="#"> Option 3 </a> </li>
+                        <li> <a href="#"> Option 4 </a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">Galery</a></li>
+                <li class="sub-menu"> 
+                    Sub menu 2        
+                    <ul>
+                        <li> <a href="#"> Option 5</a></li>
+                        <li> <a href="#"> Option 6</a></li>
+                        <li> <a href="#"> Option 7</a></li>
+                        <li> <a href="#"> Option 8</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="ui-mask"></section>
+    
+    <!-- javascript -->
+
+    <script src="./js/menu.js"></script>
+    <script>
+        config_menu.id_nav = "nav";
+    </script>
+
+</body>
+</html>

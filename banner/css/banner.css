@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html,
+body{
+  height: 100%;
+}
+#banner{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 70%;
+  min-height: 350px;
+}
+#banner .layer{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.55);
+}
+#banner .item-banner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .8s ease-in-out;
+}
+#banner .item-banner.active{
+  left: 0 !important;
+  z-index: 2;
+}
+
+#banner .item-banner.left{
+  left: -100%;
+}
+#banner .item-banner.right{
+  left: 100%;
+}
+#banner .item-banner.right,
+#banner .item-banner.left{
+  z-index: -1;
+}
+#banner .info-item{
+ position: absolute;
+ top: 50%;
+ left: 10%;
+ transform: translateY(-50%);
+ background-color: #FFF;
+ border-radius: 4px;
+ /*
+ max-width: 400px;
+ min-width: 400px;
+ max-height: 250px;
+ min-height: 250px;
+  */
+ width: 400px;
+ height: 250px;
+ padding: 25px 32px;
+ z-index: 4;
+ color: #836D6D;
+ box-sizing: border-box;
+ opacity: 0;
+ transition: all .5s ease-out;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+#banner .info-item header{
+    text-align: center;
+}
+#banner .info-item main p{
+  font-size: 15px;
+}
+#banner .info-item.active{
+  opacity: 1 !important;
+}
+#banner .divider{
+ display: block;
+ width: 30%;
+ height: 2px;
+ background-color: #0a8f60;
+ position: relative;
+ left: 50%;
+ transform: translateX(-50%);
+ margin: 22px 0;
+ border-radius: 4px;
+}
+
+@media screen and (max-width:1000px){
+  #banner .info-item{
+    left: 5%;
+  }
+}
+@media screen and (max-width:800px){
+  
+  #banner .info-item main p,
+  #banner .info-item{
+    font-size: 14px;
+  }
+  #banner .info-item{
+    width: 360px;
+    height: 240px;
+  }
+}
+@media screen and (max-width:400px){
+  #banner .info-item{
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 25px;
+  }
+  #banner .divider{
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width:300px){
+  #banner .info-item{
+    height: 65%;
+  }
+}
+
+@media screen and (max-width:235px){
+  #banner .info-item{
+    height: 80%;
+    padding: 15px;
+  }
+  #banner .divider{
+    margin: 10px 0; 
+  }
+}
