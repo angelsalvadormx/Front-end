@@ -1,6 +1,6 @@
 # Banner 
 
-## Instalation
+## Installation
 
 Add the file **banner.css**.
 ```html
