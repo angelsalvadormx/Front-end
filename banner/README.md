@@ -86,4 +86,8 @@ Then add the file 'baner.js'.
 ```
 
 ### Screenshots
-<img src="https://github.com/AngelSalvador98/Front-end/blob/master/banner/image/screenshot.png?raw=true" alt="Banner" width="100%">
+<img src="https://github.com/AngelSalvador98/Front-end/blob/master/banner/image/screenshot1.png?raw=true" alt="Banner" width="100%">
+<br/>
+<br/>
+
+<img src="https://github.com/AngelSalvador98/Front-end/blob/master/banner/image/screenshot2.png?raw=true" alt="Banner" width="100%">
