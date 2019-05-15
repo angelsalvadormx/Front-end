@@ -1,16 +1,18 @@
 # Banner 
 
-Add the file banner.css.
+## Instalation
+
+Add the file **banner.css**.
 ```html
   <link rel="stylesheet" href="./css/banner.css">
 ```
 
-Now add the id 'banner' to element where will show the banner.
+Now add the id *banner* to element where you wish  show the banner.
 ```html
   <section id="banner"></section>
 ```
 
-Then add the file 'baner.js'.
+Then add the file **banner.js**.
 ```html
   <script src="./js/banner.js"></script>
 ```
