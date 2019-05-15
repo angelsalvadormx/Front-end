@@ -1,6 +1,6 @@
 # Scroll down animation 
 
-## Instalation
+## Installation
 
 Add scroll_animation.css & scroll_animation.js files to your project and call the function animation()
 ```html
