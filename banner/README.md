@@ -1,6 +1,6 @@
-# Scroll down animation 
+# Banner 
 
-Add ./css/banner.css.
+Add the file banner.css.
 ```html
   <link rel="stylesheet" href="./css/banner.css">
 ```
@@ -86,4 +86,4 @@ Then add the file 'baner.js'.
 ```
 
 ### Screenshots
-<img src="https://github.com/AngelSalvador98/Front-end/tree/master/banner/image/Ej.png?raw=true" alt="tetris init" width="500px">
+<img src="https://github.com/AngelSalvador98/Front-end/blob/master/banner/image/screenshot.png?raw=true" alt="Banner" width="100%">
