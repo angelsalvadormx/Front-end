@@ -19,21 +19,39 @@ function setBanner(items){
     Object.keys(items).forEach(function(key,i){
         myClass = 'right';
         classInfo = '';
+        var htmlHeader = '', htmlContent = '';
         if(i == 0){
             myClass = 'active';
             classInfo = 'active';
         }
 
+        if(!items[key].hasOwnProperty('title_card') && !items[key].hasOwnProperty('content_card')){
+            classInfo += " hidden";
+        }
+        
+        if(items[key].hasOwnProperty('title_card')){
+            htmlHeader = `
+                <header>
+                    <h3>${items[key].title_card}</h3>
+                </header>    
+            `;
+        }
+
+        if(items[key].hasOwnProperty('content_card')){
+            htmlContent = `
+                <i class='divider'></i>
+                <main><p>${items[key].content_card} </p></main>
+            `;
+        }
+            
+
         banner.innerHTML += `
             <section class="item-banner ${myClass}" style="background-image:url(${items[key].image});"></section>
             <section class="info-item ${classInfo}">
-                <header>
-                    <h3>${items[key].title_card}</h3>
-                </header>
-                <i class='divider'></i>
-                <main><p>${items[key].content_card} </p></main>
+                ${htmlHeader}
+                ${htmlContent}
             </section>
-        `;
+            `;
     });
 }
 
