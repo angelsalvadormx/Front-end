@@ -1,3 +1,3 @@
 # CARRUSEL
 
-carrusel con el menor lineas posibles!
+Carrusel con el menor lineas posibles!
